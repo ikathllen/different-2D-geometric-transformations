@@ -42,5 +42,15 @@ plt.title("Reflexão")
 plt.xticks(Xvalues)
 plt.yticks(Yvalues)
 plt.grid()
+plt.subplot(2, 3, 5)
+#plotagem do gráfico de rotação, utilizando 0 = 15 rad e a formula:
+# para o eixo X (x.cos(0) - y.sen(0))
+# para o eixo Y (y.cos(0) + x.sen(0))
+plt.plot(((x1*np.cos(math.radians(15))) - (y1*np.sin(math.radians(15)))), ((y1*np.cos(math.radians(15))) + (x1*np.sin(math.radians(15)))), marker="o", color="red")
+plt.title("Rotação")
+plt.xticks(Xvalues)
+plt.yticks(Yvalues)
+plt.grid()
+
 plt.show()
 
