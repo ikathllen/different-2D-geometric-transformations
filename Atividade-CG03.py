@@ -35,5 +35,12 @@ plt.title("Escalar")
 plt.xticks(Xvalues)
 plt.yticks(Yvalues)
 plt.grid()
+plt.subplot(2, 3, 4)
+#plotagem do gráfico de reflexão, o qual possui reflexão no eixo X
+plt.plot(-x1,y1, marker="o", color="red")
+plt.title("Reflexão")
+plt.xticks(Xvalues)
+plt.yticks(Yvalues)
+plt.grid()
 plt.show()
 
