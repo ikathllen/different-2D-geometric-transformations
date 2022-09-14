@@ -51,6 +51,15 @@ plt.title("Rotação")
 plt.xticks(Xvalues)
 plt.yticks(Yvalues)
 plt.grid()
+plt.subplot(2, 3, 6)
+#plotagem do gráfico de cisalhamento, considerando a constante K(x) = 1, K(y) = 0 e a formula:
+# para o eixo X (x + (Kx*y))
+# para o eixo Y (y + (Ky*x))
+plt.plot((x1+(1*y1)),(y1+(0*x1)), marker="o", color="red")
+plt.title("Cisalhamento")
+plt.xticks(Xvalues)
+plt.yticks(Yvalues)
+plt.grid()
 
 plt.show()
 
