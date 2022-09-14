@@ -21,6 +21,12 @@ plt.title("grafico")
 plt.xticks(Xvalues)
 plt.yticks(Yvalues)
 plt.grid()
-
+#plotagem do gráfico de transalação, o qual faz a soma com +2 no eixo X e +2 no eixo Y
+plt.subplot(2, 3, 2)
+plt.plot(x1+2,y1+2, marker="o", color="red")
+plt.title("Translação")
+plt.xticks(Xvalues)
+plt.yticks(Yvalues)
+plt.grid()
 plt.show()
 
